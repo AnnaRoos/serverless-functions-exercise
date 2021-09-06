@@ -8,16 +8,30 @@
   </head>
   <body>
     <h1>Up and Running with Serverless Functions</h1>
-    <button id="fetch-btn">Fetch</button>
-    <p id="response-output">Response Placeholder</p>
-
+    <button id="astro-btn">Fetch</button>
+    <button id="iss-btn">Fetch</button>
+    <p id="astro-output">Astronauts</p>
+    <p id="iss-output">ISS</p>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        const fetchBtn = document.getElementById('fetch-btn')
-        const responseText = document.getElementById('response-output')
+        const astroBtn = document.getElementById('astro-btn')
+        const issBtn = document.getElementById('iss-btn')
+        const astroText = document.getElementById('astro-output')
+        const issText = document.getElementById('iss-output')
 
-        fetchBtn.addEventListener('click', () => {
-          responseText.innerText = 'Static Text Replacement'
+        astroBtn.addEventListener('click', async () => {
+          const response = await fetch('/.netlify/functions/astronauts').then(
+            response => response.json()
+          )
+
+          astroText.innerText = JSON.stringify(response)
+        })
+        issBtn.addEventListener('click', async () => {
+          const response = await fetch('/.netlify/functions/iss').then(
+            response => response.json()
+          )
+
+          issText.innerText = JSON.stringify(response)
         })
       })
     </script>
