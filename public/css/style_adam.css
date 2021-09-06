@@ -1,0 +1,236 @@
+@font-face {
+    font-family: alarm-clock;
+    src: url(./fonts/alarm\ clock.ttf);
+}
+
+@font-face{
+    font-family: gomarice;
+    src: url(./fonts/gomarice_gogono_cocoa_mochi.ttf);
+}
+
+@font-face {
+    font-family: kollektif;
+    src: url(./fonts/Kollektif.ttf);
+}
+
+@font-face {
+    font-family: norwester;
+    src: url(./fonts/norwester.otf);
+}
+
+:root {
+    --dark_purple: #711C91;
+    --pink: #EA00D9;
+    --light_blue: #0ABDC6;
+    --dark_blue: #133E7C;
+    --background_blue: #091833;
+    --light_green: #02C63D;
+    --dark_green: #005319;
+    --white: #ffffff;
+    --grey: #F2F2f2;
+}
+
+/* Row 2 */
+
+.r2_mouse {
+    height: 50px;
+    width: auto;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    align-self: top;
+    justify-self: right;
+    z-index: 0;
+}
+
+.r2_mouse_arrows {
+    height: 45px;
+    width: auto;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    align-self: top;
+    justify-self: right;
+    transform: translateY(60px) translateX(-2px);
+    
+
+}
+
+.r2_rocket {
+    width: auto;
+    height: 220px;
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: center;
+    justify-self: center;
+    transform: translateY(-50px);
+    
+}
+
+.r2_rocket_smoke {
+    width: 100px;
+    height: 100px;
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end:3;
+    justify-self: center;
+    align-self: flex-end;
+    transform: translateY(-15px);
+    z-index: 3;
+   
+}
+
+.r2_arrow {
+    height: 60px;
+    width: auto;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: top;
+    justify-self: right;
+    transform: translateX(60px) translateY(-50px) rotate(30deg);
+}
+
+.r2_spaceMan {
+    width: 310px;
+    height: auto;
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row: 2;
+    z-index: 1;
+}
+
+.r2_spaceManArm {
+    animation: wavingArm 2s ease-in-out infinite;
+    width: 48px;
+    height: auto;
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row: 2 / 3;
+    transform: translateX(55px) translateY(-3px);
+    transform-origin: bottom right;
+    z-index: 0;
+}
+
+@keyframes wavingArm {
+    0% {
+      transform: rotate(0deg) translateX(55px) translateY(-3px);
+    }
+    50% {
+      transform: rotate(20deg) translateX(50px) translateY(-16px);
+    }
+    100% {
+      transform: rotate(0deg) translateX(55px) translateY(-3px);
+    }
+  }
+
+.r2_spaceManText {
+    font-family: kollektif;
+    color: var(--white);
+    font-size: 24pt;
+    grid-column-start: 11;
+    grid-column-end: -1;
+    grid-row: 2 / 3;
+    transform: translateX(30px) translateY(20px);
+
+}
+.r2_spaceManTextTwo {
+    font-family: kollektif;
+    color: var(--white);
+    font-size: 24pt;
+    grid-column-start: 11;
+    grid-column-end: -1;
+    grid-row: 2 / 3;
+    align-self: flex-end;
+    transform: translateX(30px) translateY(-20px);
+}
+
+.r2_astronautNumber {
+    font-family: gomarice;
+    grid-column-start: 11;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    color: var(--pink);
+    font-size: 95pt;
+    transform: translateY(85px) translateX(31px);
+    -webkit-text-stroke: 1px white;
+    
+    
+}
+
+/* Row 6 */
+
+.r6_arrow {
+    height: 60px;
+    width: auto;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    justify-self: center;
+    align-self: center;
+    transform: translateY(50px) rotate(180deg);
+}
+
+.r6_star {
+    height: 10px;
+    width: auto;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    justify-self: left;
+    align-self: flex-end;
+}
+
+/* Row 14 */
+
+.r14_alien {
+    grid-column-start: 9;
+    grid-column-end: 12;
+    grid-row-start: 14;
+    grid-row-end: 15;
+    height: 330px;
+    width: auto;
+}
+
+.r14_star {
+    height: 10px;
+    width: auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 14;
+    grid-row-end: 15;
+    justify-self: center;
+    align-self: flex-start;
+    transform: translateY(30px);
+
+}
+
+.r14_antenna {
+    height: 300px;
+    width: auto;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 14;
+    grid-row-end: 15;
+    transform: translateX(-50px);
+}
+
+.r14_wifi {
+    height: 100px;
+    width: auto;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 14;
+    grid-row-end: 15;
+    color: var(--grey);
+    justify-self: center;
+    align-self: flex-start;
+    transform: translateY(-40px) translateX(52px) rotate(-42deg);
+
+}

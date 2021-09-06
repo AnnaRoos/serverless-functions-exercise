@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jamstack Explorers - Up and Running with Serverless Functions</title>
+  </head>
+  <body>
+    <h1>Up and Running with Serverless Functions</h1>
+    <button id="astro-btn">Fetch</button>
+    <button id="iss-btn">Fetch</button>
+    <p id="astro-output">Astronauts</p>
+    <p id="iss-output">ISS</p>   
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const astroBtn = document.getElementById('astro-btn')
+        const issBtn = document.getElementById('iss-btn')
+        const astroText = document.getElementById('astro-output')
+        const issText = document.getElementById('iss-output')
+
+        astroBtn.addEventListener('click', async () => {
+          const response = await fetch('/.netlify/functions/astronauts').then(
+            response => response.json()
+          )
+
+          astroText.innerText = JSON.stringify(response)
+        })
+        issBtn.addEventListener('click', async () => {
+          const response = await fetch('/.netlify/functions/iss').then(
+            response => response.json()
+          )
+
+          issText.innerText = JSON.stringify(response)
+        })
+      })
+    </script>
+  </body>
+</html>

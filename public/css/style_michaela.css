@@ -1,0 +1,264 @@
+@font-face {
+    font-family: alarm-clock;
+    src: url(./fonts/alarm\ clock.ttf);
+}
+
+@font-face {
+    font-family: gomarice;
+    src: url(./fonts/gomarice_gogono_cocoa_mochi.ttf);
+}
+
+@font-face {
+    font-family: kollektif;
+    src: url(./fonts/Kollektif.ttf);
+}
+
+@font-face {
+    font-family: norwester;
+    src: url(./fonts/norwester.otf);
+}
+
+:root {
+    --dark_purple: #711C91;
+    --pink: #EA00D9;
+    --light_blue: #0ABDC6;
+    --dark_blue: #133E7C;
+    --background_blue: #091833;
+    --light_green: #02C63D;
+    --dark_green: #005319;
+    --white: #ffffff;
+    --grey: #F2F2f2;
+}
+
+.r3_iss_position {
+    font-family: Kollektif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: right;
+    justify-self: center;
+    align-self: center;
+    color: var(--white);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    z-index: 1;
+}
+
+.r3_numbers {
+    text-align: right;
+}
+
+.lat_num {
+    color: var(--pink);
+}
+
+.long_num {
+    color: var(--pink);
+}
+
+.r3_star {
+    height: 20px;
+    grid-column-start: 1;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.r3_iss_satellite {
+    width: 140px;
+    justify-self: center;
+    align-self: center;
+    transform: rotate(-40deg); 
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    z-index: 2;
+}
+
+.r3_sun {
+    width: 160px;
+    z-index: 0;
+    transform: translateY(-80px) translateX(40px);
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.r3_earth {
+    width: 300px;
+    transform: translateY(-60px);
+    justify-self: center;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    z-index: 2;
+}
+
+.r3_clouds {
+    width: 350px;
+    justify-self: center;
+    transform: translateY(-105px);
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    z-index: 3;
+}
+
+.r3_moon {
+    animation: orbitMoon 90s ease-in-out infinite;
+    width: 100px;
+    justify-self: flex-end;
+    align-self: flex-end;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    z-index: 4;
+}
+
+@keyframes orbitMoon {
+    0% { 
+        transform: translateX(0px) translateY(0px) rotate(0deg)
+    }
+
+    50% {
+        transform: translateX(-300px) translateY(0px) rotate(75deg)
+    }
+
+    100% {
+        transform: translateX(0px) translateY(0px) rotate(0deg)
+    }
+}
+
+.r3_list_of_names {
+    list-style-type: circle;
+    font-family: Kollektif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-align: left;
+    transform: translateX(30px);
+    color: var(--pink);
+    grid-column-start: 11;
+    grid-column-end: 13;
+    list-style: none;
+}
+
+.r3_galaxy {
+    height: 350px;
+    grid-area: 3 / 4 / 5 / 9 ;
+    opacity: 0.4;
+    z-index: 1;
+    transform: translateX(-110px) translateY(40px) rotate(45deg);
+}
+
+.r7_wrapper {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    z-index: 0;
+}
+
+.r7_frame {
+    position: absolute;
+    Width: 250px;
+    z-index: -1;
+}
+
+.r7_weather_report {
+    font-family: alarm-clock;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: var(--white);
+    transform: translateX(32px) translateY(20px);
+}
+
+.r7_earth_div, .r7_mars_div {
+    font-family: alarm-clock;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15.2px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--light_green);
+    transform: translateX(32px) translateY(40px);
+}
+
+.r7_planet {
+    width: 100px;
+    justify-self: flex-end;
+    align-self: flex-end;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    transform: translateX(-50px) translateY(-20px);
+}
+
+.r7_text {
+    font-family: Kollektif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    text-align: right;
+    color: var(--white);
+    text-align: right;
+    align-self: flex-end;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    z-index: 0;
+}
+
+.r7_current_obj {
+    transform-style: preserve-3d;
+    font-family: gomarice;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 95px;
+    line-height: 95px;
+    color: var(--pink);
+    -webkit-text-stroke: 1px white;
+    text-shadow: 6px 7px 14px rgba(0, 0, 0, 0.7);
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.r7_object {
+    width: 420px;
+    transform: translateX(45px) translateY(-50px) rotate(20deg);
+    justify-self: flex-end;
+    align-self: center;
+    grid-column-start: 9;
+    grid-column-end: -1;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.r7_star {
+    width: 25px;
+    transform: translateX(45px) translateY(300px);
+    grid-column-start: 12;
+    grid-column-end: -1;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
