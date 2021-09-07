@@ -1,18 +1,50 @@
-# Up and Running with Serverless Functions (Jamstack Explorers)
+#### Hyper Island School Project - "If This Then That" - Brief 3
+# Space Themed Live Infographic Page
 
-Learn how to use serverless functions in less than 30 minutes!
+**Brief Objectives**
+```
+Create a webpage that uses one or more APIs
+```
 
-📼: [Free Video Course](https://explorers.netlify.com/learn/up-and-running-with-serverless-functions/)
+For this brief team 10 decided to create an infographic page that updates live depending on the changes in data retrieved from various APIs. The goals for the individual team members included making something we would be proud to display and perhaps even used in our portfolios, so a lot of attention was given to the aesthetics.
 
-## 📚 Resources
+Once the idea was decided a day was spent planning the design layout and the HTML breakdown. This allowed us to split the initial development across team members and as long as the design in Figma was followed everything would fit together. This proved to be true and only minor changes were required. 
 
-| Lesson                                                                                                                                                                                                | Start Branch                                                                                              | End Branch                                                                                              |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| [Introduction with Serverless Functions](https://explorers.netlify.com/learn/up-and-running-with-serverless-functions/introduction-with-serverless-functions)                                         | -                                                                                                         | -                                                                                                       |
-| [Project Setup with Serverless Functions](https://explorers.netlify.com/learn/up-and-running-with-serverless-functions/project-setup-with-serverless-functions)                                       | [Start Code](https://github.com/netlify/explorers-up-and-running-with-serverless-functions/tree/02-begin) | [End Code](https://github.com/netlify/explorers-up-and-running-with-serverless-functions/tree/02-end)   |
-| [Create Your First Serverless Function](https://explorers.netlify.com/learn/up-and-running-with-serverless-functions/create-your-first-serverless-function)                                           | [Start Code](https://github.com/netlify/explorers-up-and-running-with-serverless-functions/tree/03-begin) | [End Code](https://github.com/netlify/explorers-up-and-running-with-serverless-functions/tree/03-end)   |
-| [Integrate with a Third Party API with Serverless Functions](https://explorers.netlify.com/learn/up-and-running-with-serverless-functions/integrate-with-a-third-party-api-with-serverless-functions) | [Start Code](https://github.com/netlify/explorers-up-and-running-with-serverless-functions/tree/04-begin) | [End Code](https://github.com/netlify/explorers-up-and-running-with-serverless-functions/tree/04-begin) |
-| [Deploying Serverless Functions](https://explorers.netlify.com/learn/up-and-running-with-serverless-functions/deploying-serverless-functions)                                                         | -                                                                                                         | -                                                                                                       |
-| [Customizing the Request with Serverless Functions](https://explorers.netlify.com/learn/up-and-running-with-serverless-functions/customizing-the-request-with-serverless-functions)                   | [Start Code](https://github.com/netlify/explorers-up-and-running-with-serverless-functions/tree/06-begin) | [End Code](https://github.com/netlify/explorers-up-and-running-with-serverless-functions/tree/06-end)   |
-| [The Power of Atomic Serverless Functions](https://explorers.netlify.com/learn/up-and-running-with-serverless-functions/the-power-of-atomic-serverless-functions)                                     | -                                                                                                         | -                                                                                                       |
-| [Next Steps with Serverless Functions](https://explorers.netlify.com/learn/up-and-running-with-serverless-functions/next-steps-with-serverless-functions)                                             | -                                                                                                         | -                                                                                                       |
+Features of this page includes current information about the human spaceflight programs around the world, a daily inspirational quote, and a chatbot to talk with aliens! Subtle animations are used throughout the page to refine the design and give it a playful feeling. The ISS position data from [Open Notify](open-notify.org) reloads every 5 seconds, while the rest of the APIs are pulled on page load. 
+
+This is a copy of the content of the orinial repo, now featuring serverless functions to make the website work when deployed.
+---
+**Tools Used**
+1. Miro - Ideation and Schedule
+2. Figma - UI Design
+3. Illustrator - Asset Creation and Editing
+4. Slack and Discord - Communication Methods
+5. Netlify – Deployment and Serverless Functions
+   
+**Team Members**
+1. Michaela Guzmická - *Coding / Administration / Original Git Repo Owner*
+2. Paul Fleming - *Coding / Design / Coordinator*
+3. Anna Roos - *Coding / Logic Flow Development / AI chatbot / Deployment*
+4. Adam Webb - *Coding / Check In Leader / Presenter*
+
+**APIs Utilized**
+1. [Nasa API](https://api.nasa.gov/)
+2. [Open Notify](http://open-notify.org)
+3. [Wit Ai](https://wit.ai)
+4. [Open Weather](https://openweathermap.org/api)
+5. [Space Dev's](https://ll.thespacedevs.com)
+6. [Type Fit](https://type.fit/api/quotes)
+
+**Libraries Utilized**
+1. [Scroll Reveal](https://scrollrevealjs.org/)
+2. [Math.js](https://mathjs.org/)
+
+**Deployment**
+1. [Live site: What's going on in space](https://whats-going-on-in-space.netlify.app/)
+
+---
+
+Art assets from
+
+[Vecteezy](https://www.vecteezy.com/)
+
