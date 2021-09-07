@@ -12,7 +12,7 @@ Once the idea was decided a day was spent planning the design layout and the HTM
 
 Features of this page includes current information about the human spaceflight programs around the world, a daily inspirational quote, and a chatbot to talk with aliens! Subtle animations are used throughout the page to refine the design and give it a playful feeling. The ISS position data from [Open Notify](open-notify.org) reloads every 5 seconds, while the rest of the APIs are pulled on page load. 
 
-This is a copy of the content of the orinial repo, now featuring serverless functions to make the website work when deployed.
+This is a copy of the content of the [original repo](https://github.com/mgmichaela/api-website), now featuring serverless functions to make the website work when deployed.
 ---
 **Tools Used**
 1. Miro - Ideation and Schedule
