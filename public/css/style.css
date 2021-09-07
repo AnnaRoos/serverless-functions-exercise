@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    background: rgba(9,24,51,1) url(/assets/stars.png) repeat top center;
+    background: rgba(9,24,51,1) url(../assets/stars.png) repeat top center;
     /* background: linear-gradient(180deg, rgba(19,62,124,1) 0%, rgba(9,24,51,1) 100%); */
     
 }
@@ -567,7 +567,7 @@ body {
 }
 
 .card2 > .image {
-    background-image: url(./assets/stars.png);
+    background-image: url(../assets/stars.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -617,7 +617,7 @@ body {
 }
 
 .card3 > .image {
-    background-image: url(./assets/stars.png);
+    background-image: url(../assets/stars.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
