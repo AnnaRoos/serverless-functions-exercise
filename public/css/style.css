@@ -112,8 +112,8 @@ body {
 
 .eyebrow_text {
     font-family: norwester;
-    grid-column-start: 1 ;
-    grid-column-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 2;
     align-self: center;
@@ -124,8 +124,8 @@ body {
 
 .header_text {
     font-family: gomarice;
-    grid-column-start: 1 ;
-    grid-column-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 2;
     align-self: center;

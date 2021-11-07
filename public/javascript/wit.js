@@ -26,7 +26,7 @@ const talkToBucky = async (uri, method, auth) => {
 
         for(let prop in data) {
             key = data[prop];
-            console.log(key);
+
             break;
         }
         let answer;
