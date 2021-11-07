@@ -199,7 +199,7 @@ body {
 .r5_percentage_text {
     font-size: 95pt;
     font-family: gomarice;
-    grid-area: 5 / 1 / 6 / 11 ;
+    grid-area: 5 / 1 / 6 / 11;
     color: var(--pink);
     -webkit-text-stroke: 1px white;
     text-shadow: 6px 7px 14px rgba(0, 0, 0, 0.7);
@@ -210,7 +210,7 @@ body {
 .r5_body_text_percentage {
     font-size: 24pt;
     font-family: kollektif;
-    grid-area: 5 / 1 / 6 / 7;
+    grid-area: 5 / 1 / 6 / 11;
     color: var(--grey);
     align-self: flex-end;
     transform: translateY(60px);
@@ -272,7 +272,7 @@ body {
 
 .r13_header_text {
     font-family: gomarice;
-    grid-area: 13 / 1 / 14 / 8;
+    grid-area: 13 / 1 / 14 / 11;
     font-size: 105px;
     transform: translateY(0px);
     color: var(--pink);
@@ -419,6 +419,7 @@ body {
     grid-area: 16 / 5 / 17 / 9;
     z-index: 2;
     margin-top: 20px;
+    margin-left: 20px;
     align-self: center;
     justify-self: center;
     color: var(--pink);
